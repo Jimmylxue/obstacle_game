@@ -6,6 +6,8 @@
 
 这是一个taro干净项目，安装依赖之后构建 微信小程序 即可体验。
 
+![image-20220602221733760](https://vitepress-source.oss-cn-beijing.aliyuncs.com/typoraimage-20220602221733760.png)
+
 ## 难点：
 
 - 原生canvas本身难度偏高
