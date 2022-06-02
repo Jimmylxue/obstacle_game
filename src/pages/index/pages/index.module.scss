@@ -1,0 +1,27 @@
+
+.bg{
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  // background:  center center no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.startBtn{
+  width: 350rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 180rpx;
+}
+
+.packet{
+  width: 110rpx;
+  height: 110rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
