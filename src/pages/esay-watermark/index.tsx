@@ -1,4 +1,4 @@
-import { View, Image } from "@tarojs/components";
+import { View, Image, Text } from "@tarojs/components";
 import {
   rotate,
   marker,
@@ -6,6 +6,7 @@ import {
   blur,
   fullMarker,
   QRcode,
+  filter,
 } from "esay-watermark";
 import { useEffect, useState } from "react";
 
@@ -16,6 +17,7 @@ export default () => {
   const [fullMarkerSource, setFullMarkerSource] = useState("");
   const [qrcodeSource, setQRcodeSource] = useState("");
   const [rotateSource, setRotateSource] = useState("");
+  const [filterSource1, setFilterSource1] = useState("");
 
   useEffect(() => {
     marker({
@@ -65,6 +67,13 @@ export default () => {
     }).then((source) => {
       setQRcodeSource(source);
     });
+    filter({
+      src: "https://avatars.githubusercontent.com/u/65758455?v=4",
+      type: 0,
+      output: "jpeg",
+    }).then((source) => {
+      setFilterSource1(source);
+    });
   }, []);
 
   return (
@@ -81,6 +90,9 @@ export default () => {
       <Image src={qrcodeSource} />
       <View>rotate</View>
       <Image src={rotateSource} />
+      <View>filter</View>
+      <Text>黑白滤镜</Text>
+      <Image src={filterSource1} />
     </View>
   );
 };

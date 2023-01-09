@@ -26,7 +26,8 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch"
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "compress": "npx snow"
   },
   "browserslist": [
     "last 3 versions",
@@ -42,9 +43,12 @@
     "@tarojs/runtime": "3.4.11",
     "@tarojs/taro": "3.4.11",
     "@tweenjs/tween.js": "^18.6.4",
-    "esay-watermark": "^1.1.7",
+    "esay-watermark": "^1.2.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "snow-tiny": "^0.0.3",
+    "snowtiny": "^0.0.1",
+    "yx-tiny": "^0.0.10"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

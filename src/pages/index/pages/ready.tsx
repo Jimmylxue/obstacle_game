@@ -28,6 +28,13 @@ const ExchangePage = ({ onStartGame }: TProps) => {
         src="https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/shihengtest//1653903064209/title.png?Expires=3230703064&OSSAccessKeyId=LTAI4G9rgor8RbRNVjtsLqxi&Signature=leu6QtZA39ys4Tgi1AsSbOh2yo4%3D"
       />
       <Image
+        style={{
+          width: 50,
+          height: 50,
+          position: "absolute",
+          right: 10,
+          top: 10,
+        }}
         className="packet"
         src="https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/shihengtest//1653904007896/packet.png?Expires=3230704007&OSSAccessKeyId=LTAI4G9rgor8RbRNVjtsLqxi&Signature=dqCCbPRpcsJgPV8efGRHbFut9rQ%3D"
         onClick={() => {
@@ -35,6 +42,14 @@ const ExchangePage = ({ onStartGame }: TProps) => {
         }}
       />
       <Image
+        style={{
+          width: "400rpx",
+          height: "150rpx",
+          position: "absolute",
+          left: "50%",
+          transform: "translateX(-50%)",
+          bottom: 140,
+        }}
         className="startBtn"
         onClick={() => onStartGame()}
         src="https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/shihengtest//1653903575372/startBtn.png?Expires=3230703575&OSSAccessKeyId=LTAI4G9rgor8RbRNVjtsLqxi&Signature=mXPrYd8Lyzo0434rSdGmf3yI7DY%3D"
